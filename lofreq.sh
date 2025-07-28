@@ -24,7 +24,7 @@ for BAM in bam_files/indelqual_*.sorted.bam; do
       "$BAM"
 done
 
-#Filter lofreq vcf based on AF
+#Filter lofreq vcf to match threshold of other callers
 
 # Pure cultures
 for VCF in lofreq_output/*FG*.vcf; do
@@ -37,40 +37,15 @@ for VCF in lofreq_output/*FG*.vcf; do
         -o "$OUTFILE"
 done
 
-
-
-
-
 # Pooled cultures
-
 for VCF in lofreq_output1/*.vcf; do
     BASENAME=$(basename "$VCF" .vcf)
-    OUTFILE="lofreq_output1/${BASENAME}_AF0.03.vcf"
+    OUTFILE="lofreq_output/${BASENAME}_AF0.03.vcf"
 
     lofreq filter \
         --af-min 0.03 \
         -i "$VCF" \
         -o "$OUTFILE"
 done
-
-lofreq filter \
-    --af-min 0.03 \
-    -i lofreq_output/indelqual_3P6VV8_5_5_pooled_lf.vcf \
-    -o lofreq_output/indelqual_3P6VV8_5_5_pooled_lf_AF0.03.vcf
-
-lofreq filter \
-    --af-min 0.07 \
-    -i lofreq_output/indelqual_3P6VV8_4_10_pooled_lf.vcf \
-    -o lofreq_output/indelqual_3P6VV8_4_10_pooled_lf_AF0.07.vcf
-
-lofreq filter \
-    --af-min 0.12 \
-    -i lofreq_output/indelqual_3P6VV8_3_15_pooled_lf.vcf\
-    -o lofreq_output/indelqual_3P6VV8_3_15_pooled_lf_AF0.12.vcf
-
-lofreq filter \
-    --af-min 0.17 \
-    -i lofreq_output/indelqual_3P6VV8_2_20_pooled_lf.vcf  \
-    -o lofreq_output/indelqual_3P6VV8_2_20_pooled_lf_AF0.17.vcf
 
 echo "LoFreq variant calling complete."
