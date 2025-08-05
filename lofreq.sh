@@ -6,7 +6,7 @@ for BAM in bam_files/*.sorted.bam; do
     OUTBAM="bam_files/indelqual_${BASENAME}"
 
     lofreq indelqual --dindel -f WTamuc1412.fa -o "$OUTFILE" "$BAM"
-    samtools index "$OUTFILE"
+    samtools index "$OUTBAM"
 done
 
 # Run lofreq
@@ -38,7 +38,7 @@ for VCF in lofreq_output/*FG*.vcf; do
 done
 
 # Pooled cultures
-for VCF in lofreq_output1/*.vcf; do
+for VCF in lofreq_output/*.vcf; do
     BASENAME=$(basename "$VCF" .vcf)
     OUTFILE="lofreq_output/${BASENAME}_AF0.03.vcf"
 
