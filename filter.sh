@@ -4,8 +4,6 @@
 #SBATCH --error=vcffilter_%j.err
 #SBATCH --mem=3g
 #SBATCH --time=00:05:00
-#SBATCH --mail-type=FAIL
-#SBATCH --mail-user=georgiatiegs@uvic.ca
 
 # Filter VCF files
 

@@ -4,8 +4,6 @@
 #SBATCH --error=pipe_logs/align_%j.err
 #SBATCH --mem=10g
 #SBATCH --time=01:00:00
-#SBATCH --mail-type=FAIL
-#SBATCH --mail-user=georgiatiegs@uvic.ca
 
 # Set output directory
 OUTPUT_DIR="align_output_${SLURM_JOBID}"
@@ -20,7 +18,7 @@ echo "Starting to filter FASTQ files"
 module load StdEnv/2023 gcc/12.3 python/3.10
 
 # Activate nanofilt virtual environment
-source /home/gtiegs/projects/def-ld172/gtiegs/nanofilt/nanofilt_env/bin/activate
+source nanofilt_env/bin/activate
 
 # Run nanofilt on FASTQ files
 for FASTQ in *.fastq; do
@@ -40,7 +38,7 @@ module load gcc arrow/17.0.0
 module load scipy-stack/2024b numpy/2.1.1
 
 # Activate nanoplot virtual environment
-source /home/gtiegs/projects/def-ld172/gtiegs/nanoplot/nanoplot_env/bin/activate
+source nanoplot_env/bin/activate
 
 # Run nanoplot on FASTQ files
 for FASTQ in ${OUTPUT_DIR}/fastq_filtered/*_filtered.fastq; do
@@ -96,7 +94,7 @@ module load arrow/17.0.0
 module load scipy-stack/2024b numpy/2.1.1
 
 # Activate nanoplot virtual environment
-source /home/gtiegs/projects/def-ld172/gtiegs/nanoplot/nanoplot_env/bin/activate
+source nanoplot_env/bin/activate
 
 # Run nanoplot on BAM files
 for BAM in ${OUTPUT_DIR}/bam_files/*.sorted.bam; do

@@ -6,14 +6,13 @@
 #SBATCH --mem=5G
 #SBATCH --cpus-per-task=4        # 4 threads
 #SBATCH --array=0-9              # Array for 9 BAM files
-#SBATCH --mail-type=FAIL
-#SBATCH --mail-user=georgiatiegs@uvic.ca
+
 
 # Define directories
-INPUT_DIR="/home/gtiegs/projects/def-ld172/gtiegs/glcnac/GVLZ7G-IS/align_output_64269857/bam_files/"
-OUTPUT_DIR="/home/gtiegs/projects/def-ld172/gtiegs/glcnac/GVLZ7G-IS/clair3_output/"
-MODEL_PATH="basecalling_models/rerio/clair3_models/r1041_e82_400bps_sup_v430" 
-REF="${INPUT_DIR}/WTamuc1412.fa"
+INPUT_DIR="path/to/bam/files"
+OUTPUT_DIR="path/to/output/directory"
+MODEL_PATH="path/to/clair3/model" 
+REF="${INPUT_DIR}/reference.fa"
 
 # Define array of BAM files
 BAM_FILES=(${INPUT_DIR}/*.sorted.bam)

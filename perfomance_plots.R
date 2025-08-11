@@ -1,7 +1,7 @@
 # July 28 2025
 # Visualization of vcfeval results for Independent Study
 
-setwd("~/uleth/independent-study/project")
+setwd("/path/to/vcfeval-output")
 
 # Import results
 library(tidyverse)

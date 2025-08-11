@@ -4,8 +4,6 @@
 #SBATCH --error=pipe_logs/freebayes_%j.err
 #SBATCH --mem=5g
 #SBATCH --time=00:40:00
-#SBATCH --mail-type=FAIL
-#SBATCH --mail-user=georgiatiegs@uvic.ca
 
 # Set output directory
 OUTPUT_DIR="freebayes_output"
