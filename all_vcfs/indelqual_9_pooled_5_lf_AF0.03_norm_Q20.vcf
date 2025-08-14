@@ -1,0 +1,38 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##fileDate=20250716
+##source=lofreq call -f WTamuc1412.fa --call-indels --no-default-filter -r amuc1412-WTversion:1-151 -o /tmp/lofreq2_call_parallelhdw4jwty/0.vcf.gz bam_files/indelqual_9_pooled_5.sorted.bam 
+##reference=WTamuc1412.fa
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_snvqual_46,Description="Minimum SNV Quality (Phred) 46">
+##FILTER=<ID=min_indelqual_44,Description="Minimum Indel Quality (Phred) 44">
+##contig=<ID=amuc1412-WTversion>
+##FILTER=<ID=min_snvqual_43,Description="Minimum SNV Quality (Phred) 43">
+##FILTER=<ID=min_indelqual_40,Description="Minimum Indel Quality (Phred) 40">
+##FILTER=<ID=min_indelqual_39,Description="Minimum Indel Quality (Phred) 39">
+##FILTER=<ID=min_indelqual_42,Description="Minimum Indel Quality (Phred) 42">
+##FILTER=<ID=min_indelqual_41,Description="Minimum Indel Quality (Phred) 41">
+##FILTER=<ID=min_snvqual_42,Description="Minimum SNV Quality (Phred) 42">
+##bcftools_concatVersion=1.22+htslib-1.22.1
+##bcftools_concatCommand=concat -a -O z -o /tmp/lofreq2_call_parallelhdw4jwty/concat.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/0.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/1.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/2.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/3.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/4.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/5.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/6.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/7.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/8.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/9.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/10.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/11.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/12.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/13.vcf.gz /tmp/lofreq2_call_parallelhdw4jwty/14.vcf.gz; Date=Wed Jul 16 14:29:22 2025
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_55,Description="Minimum SNV Quality (Phred) 55">
+##FILTER=<ID=min_indelqual_53,Description="Minimum Indel Quality (Phred) 53">
+##FILTER=<ID=min_af_0.030000,Description="Minimum allele frequency 0.030000">
+##bcftools_normVersion=1.19+htslib-1.18
+##bcftools_normCommand=norm -f WTamuc1412.fa indelqual_9_pooled_5_lf_AF0.03.vcf; Date=Sat Jul 26 16:24:12 2025
+##bcftools_filterVersion=1.19+htslib-1.18
+##bcftools_filterCommand=filter -i QUAL>=20 indelqual_9_pooled_5_lf_AF0.03_norm.vcf; Date=Sat Jul 26 16:24:13 2025
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+amuc1412-WTversion	142	.	G	A	2384	PASS	DP=3327;AF=0.079651;SB=9;DP4=1542,1513,147,118
+amuc1412-WTversion	188	.	C	T	55	PASS	DP=3328;AF=0.030649;SB=1;DP4=1637,1582,54,48
+amuc1412-WTversion	266	.	TG	T	3980	PASS	DP=3332;AF=0.070528;SB=578;DP4=1681,1391,11,224;INDEL;HRUN=6
+amuc1412-WTversion	401	.	A	C	1394	PASS	DP=3333;AF=0.054305;SB=8;DP4=1607,1537,82,99
+amuc1412-WTversion	457	.	ATTT	A	7195	PASS	DP=3333;AF=0.083708;SB=5;DP4=1542,1510,151,128;INDEL;HRUN=3

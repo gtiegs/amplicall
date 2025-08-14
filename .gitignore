@@ -1,9 +1,6 @@
-all_vcfs/
 data/
-vcfeval_output/
 comparison_roc.png
 rocplot.sh
-truth.vcf
 truth.vcf.gz
 truth.vcf.gz.tbi
 WTamuc1412.fa

@@ -1,0 +1,20 @@
+##fileformat=VCFv4.2
+##source=Clair3
+##clair3_version=1.0.9
+##cmdline=/opt/bin/run_clair3.sh --bam_fn=/home/gtiegs/projects/def-ld172/gtiegs/glcnac/GVLZ7G-IS/align_output_64269857/bam_files//7_pooled_15.sorted.bam --ref_fn=/home/gtiegs/projects/def-ld172/gtiegs/glcnac/GVLZ7G-IS/align_output_64269857/bam_files//WTamuc1412.fa --threads=4 --platform=ont --model_path=basecalling_models/rerio/clair3_models/r1041_e82_400bps_sup_v430 --output=/home/gtiegs/projects/def-ld172/gtiegs/glcnac/GVLZ7G-IS/clair3_output//7_pooled_15 --snp_min_af=0.03 --indel_min_af=0.03 --min_mq=20 --no_phasing_for_fa --include_all_ctgs --haploid_sensitive --var_pct_full=1.0 --var_pct_phasing=1.0 --ref_pct_full=1.0
+##reference=/home/gtiegs/projects/def-ld172/gtiegs/glcnac/GVLZ7G-IS/align_output_64269857/bam_files//WTamuc1412.fa
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=LowQual,Description="Low quality variant">
+##FILTER=<ID=RefCall,Description="Reference call">
+##INFO=<ID=P,Number=0,Type=Flag,Description="Result from pileup calling">
+##INFO=<ID=F,Number=0,Type=Flag,Description="Result from full-alignment calling">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads 1. with MQ below 5 or an user-specified threshold, or 2. selected by 'samtools view -F 2316', are filtered)">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=AF,Number=A,Type=Float,Description="Observed allele frequency in reads, for each ALT allele, in the same order as listed, or the REF allele for a RefCall">
+##contig=<ID=amuc1412-WTversion,length=1215>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+amuc1412-WTversion	142	.	G	A	13.14	PASS	F	GT:GQ:DP:AD:AF	1:13:3270:2546,709:0.2168
+amuc1412-WTversion	401	.	A	C	5.46	PASS	F	GT:GQ:DP:AD:AF	1:5:3289:2747,535:0.1627

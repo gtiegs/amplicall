@@ -1,0 +1,84 @@
+2025-07-27 18:58:50 serial = 27182818284
+2025-07-27 18:58:50 email = anon
+2025-07-27 18:58:50 RTG version = RTG Tools 3.13 / Core c27844a5bb (2025-05-27)
+2025-07-27 18:58:50 file.encoding = UTF-8
+2025-07-27 18:58:50 file.separator = /
+2025-07-27 18:58:50 host.name = GEEGPC
+2025-07-27 18:58:50 java.class.path = /home/gtiegs/software/miniforge3/envs/rtg-tools/share/rtg-tools-3.13-0/RTG.jar
+2025-07-27 18:58:50 java.class.version = 67.0
+2025-07-27 18:58:50 java.home = /home/gtiegs/software/miniforge3/envs/rtg-tools/lib/jvm
+2025-07-27 18:58:50 java.io.tmpdir = /tmp
+2025-07-27 18:58:50 java.library.path = /home/gtiegs/software/miniforge3/envs/rtg-tools/share/rtg-tools-3.13-0
+2025-07-27 18:58:50 java.runtime.name = OpenJDK Runtime Environment
+2025-07-27 18:58:50 java.runtime.version = 23.0.2-internal-adhoc.conda.src
+2025-07-27 18:58:50 java.specification.name = Java Platform API Specification
+2025-07-27 18:58:50 java.specification.vendor = Oracle Corporation
+2025-07-27 18:58:50 java.specification.version = 23
+2025-07-27 18:58:50 java.vendor = N/A
+2025-07-27 18:58:50 java.vendor.url = https://openjdk.org/
+2025-07-27 18:58:50 java.vendor.url.bug = https://bugreport.java.com/bugreport/
+2025-07-27 18:58:50 java.version = 23.0.2-internal
+2025-07-27 18:58:50 java.version.date = 2025-01-21
+2025-07-27 18:58:50 java.vm.compressedOopsMode = Zero based
+2025-07-27 18:58:50 java.vm.info = mixed mode, sharing
+2025-07-27 18:58:50 java.vm.name = OpenJDK 64-Bit Server VM
+2025-07-27 18:58:50 java.vm.specification.name = Java Virtual Machine Specification
+2025-07-27 18:58:50 java.vm.specification.vendor = Oracle Corporation
+2025-07-27 18:58:50 java.vm.specification.version = 23
+2025-07-27 18:58:50 java.vm.vendor = Oracle Corporation
+2025-07-27 18:58:50 java.vm.version = 23.0.2-internal-adhoc.conda.src
+2025-07-27 18:58:50 jdk.debug = release
+2025-07-27 18:58:50 lang.version = 23.0.2-internal
+2025-07-27 18:58:50 line.separator = 
+
+2025-07-27 18:58:50 models.dir = /home/gtiegs/software/miniforge3/envs/rtg-tools/share/rtg-tools-3.13-0/models
+2025-07-27 18:58:50 nashorn.option.no.deprecation.warning = true
+2025-07-27 18:58:50 native.encoding = UTF-8
+2025-07-27 18:58:50 os.arch = amd64
+2025-07-27 18:58:50 os.freememory = 8769961984
+2025-07-27 18:58:50 os.name = Linux
+2025-07-27 18:58:50 os.totalmemory = 10431578112
+2025-07-27 18:58:50 os.version = 5.15.167.4-microsoft-standard-WSL2
+2025-07-27 18:58:50 path.separator = :
+2025-07-27 18:58:50 polyglot.js.nashorn-compat = true
+2025-07-27 18:58:50 processor.arch = amd64
+2025-07-27 18:58:50 processor.count = 16
+2025-07-27 18:58:50 references.dir = /home/gtiegs/software/miniforge3/envs/rtg-tools/share/rtg-tools-3.13-0/references
+2025-07-27 18:58:50 runtime.freememory = 161044416
+2025-07-27 18:58:50 runtime.maxmemory = 9395240960
+2025-07-27 18:58:50 runtime.totalMemory = 176160768
+2025-07-27 18:58:50 stderr.encoding = UTF-8
+2025-07-27 18:58:50 stdout.encoding = UTF-8
+2025-07-27 18:58:50 sun.arch.data.model = 64
+2025-07-27 18:58:50 sun.boot.library.path = /home/gtiegs/software/miniforge3/envs/rtg-tools/lib/jvm/lib
+2025-07-27 18:58:50 sun.cpu.endian = little
+2025-07-27 18:58:50 sun.io.unicode.encoding = UnicodeLittle
+2025-07-27 18:58:50 sun.java.command = /home/gtiegs/software/miniforge3/envs/rtg-tools/share/rtg-tools-3.13-0/RTG.jar vcfeval -t WTamuc1412.sdf --baseline truth.vcf.gz --calls all_vcfs/6_pooled_20_fb_norm_GT_GT.vcf.gz --all-records --squash-ploidy --threads 4 --output vcfeval_output/6_pooled_20_fb_norm_GT_GT
+2025-07-27 18:58:50 sun.java.launcher = SUN_STANDARD
+2025-07-27 18:58:50 sun.jnu.encoding = UTF-8
+2025-07-27 18:58:50 sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2025-07-27 18:58:50 talkback = true
+2025-07-27 18:58:50 usage = false
+2025-07-27 18:58:50 user.dir = /home/gtiegs/projects/uleth/indStudy/amplicall
+2025-07-27 18:58:50 user.home = /home/gtiegs
+2025-07-27 18:58:50 user.language = en
+2025-07-27 18:58:50 user.name = gtiegs
+2025-07-27 18:58:50 user.timezone = America/Vancouver
+2025-07-27 18:58:50 vendor = N/A
+2025-07-27 18:58:50 gzipfix.enabled = false
+2025-07-27 18:58:50 Command line arguments: rtg vcfeval -t WTamuc1412.sdf --baseline truth.vcf.gz --calls all_vcfs/6_pooled_20_fb_norm_GT_GT.vcf.gz --all-records --squash-ploidy --threads 4 --output vcfeval_output/6_pooled_20_fb_norm_GT_GT
+2025-07-27 18:58:50 Run Id: 89f2ecf8-8862-4685-920c-53cdb111e653
+2025-07-27 18:58:50 Referenced SDF-ID: 36cc78f2-a527-4930-8321-981094656881 Type: DNA Sequences: 1 Max-Length: 1215 Min-Length: 1215 Arm: UNKNOWN
+2025-07-27 18:58:50 Variant orientors per pass: [squash (1 haplotypes):squash (1 haplotypes)]
+2025-07-27 18:58:50 Reference amuc1412-WTversion baseline contains 4 variants.
+2025-07-27 18:58:50 Reference amuc1412-WTversion calls contains 5 variants.
+2025-07-27 18:58:50 Reference amuc1412-WTversion had maximum path complexity of 3 at amuc1412-WTversion:141-187
+2025-07-27 18:58:50 There were 5 variants not thresholded in ROC data files due to missing or invalid GQ (FORMAT) values.
+2025-07-27 18:58:50 Representation bias correction factor for SNP 3/3.0 = 1.0
+2025-07-27 18:58:50 Representation bias correction factor for NON_SNP 1/1.0 = 1.0
+2025-07-27 18:58:50 Could not select maximized F-measure threshold from ROC data, only un-thresholded statistics will be shown. Consider selecting a different scoring attribute with --vcf-score-field
+2025-07-27 18:58:50 Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+     None                  4              4          1          0     0.8000       1.0000     0.8889
+
+2025-07-27 18:58:50 Finished successfully in 0 s.
