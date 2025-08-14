@@ -1,0 +1,9 @@
+##fileformat=VCFv4.2
+##source=ground-truth
+##reference=WTamuc1412.fa
+##contig=<ID=amuc1412-WTversion,length=1215>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+amuc1412-WTversion	142	.	G	A	.	PASS	.	GT	1
+amuc1412-WTversion	188	.	C	T	.	PASS	.	GT	1
+amuc1412-WTversion	401	.	A	C	.	PASS	.	GT	1
+amuc1412-WTversion	457	.	ATTT	A	.	PASS	.	GT	1
